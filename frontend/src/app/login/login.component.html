@@ -1,0 +1,20 @@
+<section class="flex items-center justify-center h-screen">
+    <app-theme></app-theme>
+    <div class="pt-4 px-10 pb-9 shadow-orange shadow-custom w-96 h-96 flex flex-col justify-center items-center rounded z-10" [ngClass]="{'bg-gray-dark' : theme === ThemeEnum.DARK, 'bg-gray-pale' : theme === ThemeEnum.LIGHT}">
+        <img [src]="theme === ThemeEnum.DARK ? 'assets/img/musicomm-login-dark.svg' : 'assets/img/musicomm-login-light.svg'">
+
+        <h2 class="font-title text-3xl my-4" [ngClass]="{'text-gray-dark' : theme === ThemeEnum.LIGHT, 'text-gray-pale' : theme === ThemeEnum.DARK}">Welcome</h2>
+        
+        <p class="font-body text-lg mb-8 text-center" [ngClass]="{'text-gray-dark' : theme === ThemeEnum.LIGHT, 'text-gray-pale' : theme === ThemeEnum.DARK}">To start, please login with your music app</p>
+
+        <div class="flex flex-col self-stretch gap-y-2">
+            <button class="bg-spotify  text-gray-pale rounded-3xl py-1 px-4 flex items-center justify-center"><img src="assets/img/spotify.svg" width="20"><span class="flex-1">Login with Spotify</span></button>
+            <button class="bg-deezer  text-gray-pale rounded-3xl py-1 px-4 flex items-center justify-center"><img src="assets/img/deezer.svg" width="20"><span class="flex-1">Login with Deezer</span></button>
+            <button class="bg-amazon  text-gray-pale rounded-3xl py-1 px-4 flex items-center justify-center"><img src="assets/img/amazon.svg" width="20"><span class="flex-1">Login with Amazon Music</span></button>
+            <button class="bg-youtube  text-gray-pale rounded-3xl py-1 px-4 flex items-center justify-center"><img src="assets/img/youtube.svg" width="20"><span class="flex-1">Login with Youtube Music</span></button>
+        </div>
+    </div>
+    <div class="bg-repeat-x bg-center w-screen h-3/6 absolute animate-circlingBg"
+         [ngClass]="{'bg-[url(assets/img/waves-dark.svg)]' : theme === ThemeEnum.DARK, 'bg-[url(assets/img/waves-light.svg)]' : theme === ThemeEnum.LIGHT}"
+         ></div>
+</section>

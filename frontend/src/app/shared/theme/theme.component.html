@@ -1,0 +1,10 @@
+<div class="absolute top-10 right-10">
+    <div class="relative flex justify-between items-center border rounded-2xl cursor-pointer"
+         [ngClass]="{'border-orange' : theme === ThemeEnum.LIGHT, 'border-yellow' : theme === ThemeEnum.DARK}"
+         (click)="toggleState()">
+        <mat-icon fontIcon="dark_mode" class="text-yellow m-1"></mat-icon>
+        <div class="w-6 h-6 rounded-xl absolute m-1" 
+             [ngClass]="{'bg-orange' : theme === ThemeEnum.LIGHT, 'bg-yellow right-0' : theme === ThemeEnum.DARK}"></div>
+        <mat-icon fontIcon="light_mode" class="text-orange m-1"></mat-icon>
+    </div>
+</div>
