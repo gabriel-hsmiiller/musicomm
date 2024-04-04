@@ -1,0 +1,18 @@
+<div class="w-72 h-sidebar fixed border-r-2 border-orange bg-gray-dark overflow-x-hidden overflow-y-auto">
+    <div class="py-4 flex flex-col items-center">
+        <img class="self-stretch mx-5 aspect-square shadow-orange-shadow shadow-custom " src="https://upload.wikimedia.org/wikipedia/pt/thumb/1/1e/Linkin_Park_A_Thousand_Suns.jpg/220px-Linkin_Park_A_Thousand_Suns.jpg">
+        <div class="mt-4">
+            <p class="font-body font-semibold text-xl text-gray-pale text-center">Burning in the Skies</p>
+            <p class="font-body font-medium text-base text-gray-medium text-center">Linkin Park</p>
+        </div>
+    </div>
+    <hr class="mx-8">
+    <div class="mt-2 mb-4 w-full">
+        <div *ngFor="let i of [4,5,6,7,8,9,10,11,12,13,14]" class="ml-5 my-2 text-base w-full">
+            <span class="font-body font-semibold text-gray-medium mr-2">{{ i }}</span>
+            <span class="font-body font-semibold text-gray-pale text-nowrap">Music's name</span><br>
+            <!-- <div class="h-1 w-1 rounded bg-gray-medium mx-2 inline-block"></div> -->
+            <span class="font-body font-medium text-gray-medium ml-4">Linkin Park</span>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon'
 import { Subscription } from 'rxjs';
 import { ThemeEnum, ThemeService } from '../../theme.service';
@@ -16,6 +16,8 @@ export class ThemeComponent implements OnInit,OnDestroy {
   public ThemeEnum = ThemeEnum;
 
   private themeSubscription?: Subscription;
+
+  @Input() absolute: boolean = false;
   
   constructor(private themeService: ThemeService) { }
 

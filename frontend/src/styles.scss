@@ -39,4 +39,26 @@ $frontend-theme: mat.define-light-theme((
 @tailwind components;
 @tailwind utilities;
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Catamaran, Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+  ::-webkit-scrollbar {
+    /* Customize the scrollbar width */
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    /* Customize the scrollbar track */
+    background-color: #2B2B2B;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    /* Customize the scrollbar thumb */
+    background-color: #E4663A7F;
+    border-radius: 4px;
+
+    &:hover{
+      background-color: #E4663A;
+    }
+  }
+}

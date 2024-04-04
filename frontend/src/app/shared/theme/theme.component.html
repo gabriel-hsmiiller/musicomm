@@ -1,4 +1,4 @@
-<div class="absolute top-10 right-10">
+<div [ngClass]="{'absolute top-10 right-10' : absolute}">
     <div class="relative flex justify-between items-center border rounded-2xl cursor-pointer"
          [ngClass]="{'border-orange' : theme === ThemeEnum.LIGHT, 'border-yellow' : theme === ThemeEnum.DARK}"
          (click)="toggleState()">

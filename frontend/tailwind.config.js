@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         "red": "#92253F",
         "orange": "#E4663A",
+        "orange-shadow": "#E4663A7F",
         "yellow": "#FFE35E",
         "yellow-pale": "#FBFF7C",
         "gray-pale": "#E6E6E6",
@@ -25,6 +26,13 @@ module.exports = {
       },
       boxShadow: {
         custom: '0 0 20px 4px'
+      },
+      spacing: {
+        "1/12": "8.333333%"
+      },
+      height: {
+        "7.5": "1.875rem", /* 28px */
+        "sidebar": "calc(100vh - 180px)"
       },
       animation: {
         circlingBg: 'circlingBgKeys 30s linear infinite'
